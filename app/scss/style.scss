@@ -1,0 +1,270 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+main {
+  background: linear-gradient(150deg, rgba(41, 43, 47, 1) 56%, rgba(53, 1, 113, 1) 100%);
+  background-repeat: no-repeat;
+}
+
+.header {
+  background-color: #5865F2;
+
+  &__inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__list-item:nth-child(1) {
+    padding-right: 100px;
+  }
+
+  // плавное подчеркивание ссылки
+  &__list-link {
+    @extend %menu-text;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__list-item a::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    content: "";
+    transition: width 0.3s ease-out;
+  }
+
+  &__list-item a:hover:after,
+  &__list-item a:focus:after {
+    width: 100%;
+  }
+}
+
+
+
+.server {
+  padding-bottom: 75px;
+
+  &__invite-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-column-gap: 125px;
+    grid-row-gap: 100px;
+    justify-items: center;
+  }
+
+  &__invite {
+    width: 250px;
+    height: 150px;
+  }
+
+  &__logo-container {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #1E2023;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  &__logo {
+    max-width: 85px;
+    max-height: 85px;
+    border-radius: 85px;
+  }
+
+  &__name-text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name-owner {
+    display: flex;
+    flex-direction: column;
+    @extend %text-font;
+    padding-top: 5px;
+  }
+
+  &__name-owner span {
+    opacity: 0.8;
+  }
+
+  &__setting {
+    height: 34px;
+    width: 90px;
+    background-color: #1E2023;
+    border-radius: 5px;
+    margin-top: 7px;
+    @extend %text-font;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.control {
+  background-color: #1E2023;
+  padding: 10px 0;
+  @extend %text-font;
+  font-weight: 500;
+
+  &__server-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 85px;
+    margin-right: 15px;
+    margin-left: 152px;
+  }
+
+  &__server {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.settings {
+
+  &__card {
+    width: 290px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: #1E2023;
+    display: flex;
+  }
+
+  &__grid-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 150px;
+    grid-row-gap: 150px;
+    justify-items: center;
+    padding-bottom: 100px;
+    margin: 0 20px;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin: auto 20px;
+  }
+
+  &__card-heading {
+    font-family: 'whitney-bold';
+    font-size: 23px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin: 30px 0 10px;
+    text-transform: uppercase
+  }
+
+  &__card-text {
+    @extend %text-font;
+    opacity: 0.8;
+  }
+}
+
+
+
+
+.title {
+  font-family: 'whitney-bold';
+  font-size: 47px;
+  line-height: 54px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 70px;
+}
+
+.logo {
+  padding: 20px 0;
+  padding-right: 30px;
+}
+
+.nav {
+  display: none;
+}
+
+.cd-header {
+  display: none;
+}
+
+.guild__icon {
+  max-width: 85px;
+  max-height: 85px;
+  border-radius: 85px;
+  align-items: center;
+}
+
+.guild__icon-setting{
+  height: 50px;
+  width: 50px;
+  border-radius: 85px;
+  margin-right: 15px;
+  margin-left: 152px;
+  position: absolute;
+}
+
+// bg color copyryght
+::selection {
+  background-color: #1E2023;
+}
+
+
+.footer {
+  background-color: rgba(24, 25, 28, 1);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    @extend %text-font;
+    margin-bottom: 20px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__menu-title {
+    font-family: $whitney;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 7px;
+  }
+}
+
+// !
+
+// !!
+@import 'media';

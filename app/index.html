@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saeland Dashboard</title>
+  <link rel="shortcut icon" href="images/logo-saeland.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item"><a class="menu__list-link" href="index.html">Main</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" href="#">Commands</a></li>
+          </ul>
+        </nav>
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="images/logo.svg" alt="Saeland">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item"><a class="menu__list-link" href="staff.html">Staff</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" href="#">Logout</a></li>
+          </ul>
+        </nav>
+
+        <!-- btn mobile navigation-->
+        <div class="cd-header">
+          <div class="nav__btn-wrapper">
+            <div class="nav-but-wrap">
+              <div class="menu-icon hover-target">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <main class="main">
+      <!-- mobile navigation -->
+      <div class="nav">
+        <div class="nav__content">
+          <ul class="nav__list">
+            <li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Main</a></li>
+            <li class="nav__list-item"><a href="#" class="hover-target">Commands</a></li>
+            <li class="nav__list-item"><a href="staff.html" class="hover-target">Staff</a></li>
+            <li class="nav__list-item"><a href="#" class="hover-target">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+      <section class="server">
+        <div class="container">
+          <div class="server__inner">
+            <h2 class="title">Select Server</h2>
+            <div class="server__invite-box">
+              <!-- {% for guild in mutual_guilds %}
+                <div class="server__invite">
+                  <div class="server__logo-container">
+                    <img class="server__logo" src="{{ guild.icon_url }}" alt="">
+                    <img src="{{ guild.icon_url }}" onerror="this.onerror=null;this.src='images/error-server-avatar.png'" class="guild__icon" alt="Error loading images">  
+                  </div>
+                  <div class="server__name-text">
+                    <p class="server__name-owner">{{ guild.name }}<span>Owner</span></p>
+                    <a class="server__setting" href="setting-dashboard.html">settings</a>
+                  </div>
+                </div>
+              {% endfor %} -->
+              <div class="server__invite">
+                <div class="server__logo-container">
+                  <img class="server__logo" src="images/error-server-avatar.png" alt="logo your server">
+                </div>
+                <div class="server__name-text">
+                  <p class="server__name-owner">Server Name<span>server own</span></p>
+                  <a class="server__setting" href="#">settings</a>
+                </div>
+              </div>
+              <div class="server__invite">
+                <div class="server__logo-container">
+                  <img class="server__logo" src="images/error-server-avatar.png" alt="logo your server">
+                </div>
+                <div class="server__name-text">
+                  <p class="server__name-owner">Server Name<span>server own</span></p>
+                  <a class="server__setting" href="#">settings</a>
+                </div>
+              </div>
+              <div class="server__invite">
+                <div class="server__logo-container">
+                  <img class="server__logo" src="images/error-server-avatar.png" alt="logo your server">
+                </div>
+                <div class="server__name-text">
+                  <p class="server__name-owner">Server Name<span>server own</span></p>
+                  <a class="server__setting" href="#">settings</a>
+                </div>
+              </div>
+              <div class="server__invite">
+                <div class="server__logo-container">
+                  <img class="server__logo" src="images/error-server-avatar.png" alt="logo your server">
+                </div>
+                <div class="server__name-text">
+                  <p class="server__name-owner">Server Name<span>server own</span></p>
+                  <a class="server__setting" href="#">settings</a>
+                </div>
+              </div>
+              <div class="server__invite">
+                <div class="server__logo-container">
+                  <img class="server__logo" src="images/error-server-avatar.png" alt="logo your server">
+                </div>
+                <div class="server__name-text">
+                  <p class="server__name-owner">Server Name<span>server own</span></p>
+                  <a class="server__setting" href="#">settings</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__dscr">
+          <div class="logo">
+            <img class="logo__img" src="images/logo.svg" alt="Saeland">
+          </div>
+          <p class="footer__text">The best Discord bot <br>
+            that can certainly improve <br>
+            your server</p>
+          <p class="footer__text">SAELAND - Always one step ahead.</p>
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__menu-list">
+            <h4 class="footer__menu-title">Menu</h4>
+            <li class="menu__list-item"><a class="menu__list-link" href="index.html">Main</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" href="#">Commands</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" href="staff.html">Staff</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" href="#">Logout</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" href="https://discord.gg/CmMchZrDYg">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

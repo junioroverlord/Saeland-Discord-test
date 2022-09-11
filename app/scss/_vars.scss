@@ -1,0 +1,27 @@
+%menu-text {
+  font-family: 'whitney-medium';
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 500;
+  color: #fff;
+}
+
+%text-font {
+  font-family: 'whitney-book';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+%mobile-menu {
+  font-family: 'whitney-bold';
+  font-size: 64px;
+  line-height: 1.15;
+  letter-spacing: 3px;
+  font-weight: 700;
+
+}
+
+$whitney: 'whitney-medium', serif;
+$card-staff: 'Helvetica-Neue' , serif;

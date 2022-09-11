@@ -1,0 +1,143 @@
+@import 'vars';
+@import 'fonts';
+
+
+
+.profile {
+
+  &__card {
+    width: 300px;
+    height: 330px;
+    background-color: #18191C;
+    border-radius: 5px;
+  }
+
+  &__head-name {
+    font-family: $card-staff;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #fff;
+    margin: 20px 15px 0;
+  }
+
+  &__head-name span {
+    color: #B9BBBE;
+  }
+
+  &__head-about {
+    font-family: $whitney;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 13px;
+  }
+
+  &__about {
+    margin: 5px 15px;
+    border-top: 1px solid #4F545C;
+  }
+
+  &__about-title {
+    font-family: 'Padauk', sans-serif;
+    font-size: 17px;
+    line-height: 17px;
+    color: #B9BBBE;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  &__grid-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 360px;
+    grid-row-gap: 100px;
+    justify-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__card-luke {
+    grid-column: 1 / 3;
+  }
+
+
+  &__about-text {
+    @extend %text-font;
+    font-weight: 500;
+    margin-top: 7px;
+  }
+
+  &__about-link {
+    @extend %text-font;
+    color: rgba(1, 167, 233, 1);
+  }
+
+  &__role {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 20px;
+  }
+
+  &__role-title {
+    font-family: 'Padauk', sans-serif;
+    font-size: 17px;
+    line-height: 17px;
+    color: #B9BBBE;
+    text-transform: uppercase;
+    margin-top: 13px;
+  }
+
+  &__flex-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__role-box {
+    display: flex;
+    background-color: #292B2F;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    padding: 5px 15px 5px 0;
+  }
+
+  &__role-indicator {
+    padding: 0 10px;
+  }
+
+  &__role-text {
+    font-family: $whitney;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  &__card-damego {
+    height: 365px;
+  }
+
+  &__about-text-damego span {
+    font-family: 'whitney-bold';
+    font-weight: 700;
+  }
+}
+
+.social {
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  &__link:not(:last-of-type) {
+    padding-right: 10px;
+  }
+
+  &__link-img--vk {
+    max-width: 22px;
+  }
+}
